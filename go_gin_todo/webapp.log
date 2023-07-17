@@ -1,0 +1,71 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] Loaded HTML Templates (3): 
+	- list.tmpl
+	- 
+	- edit.tmpl
+
+[GIN-debug] POST   /todos/save               --> main.setupRouter.func1 (3 handlers)
+[GIN-debug] POST   /todos/update             --> main.setupRouter.func2 (3 handlers)
+[GIN-debug] GET    /todos/edit               --> main.setupRouter.func3 (3 handlers)
+[GIN-debug] GET    /todos/destroy            --> main.setupRouter.func4 (3 handlers)
+[GIN-debug] GET    /todos/list               --> main.setupRouter.func5 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2023/07/16 - 15:31:01 | 200 |    1.649708ms |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 15:32:45 | 200 |    1.534541ms |             ::1 | GET      "/todos/edit?id=25"
+[GIN] 2023/07/16 - 16:04:31 | 200 |    3.324125ms |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:04:38 | 200 |     782.042µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:10 | 301 |    5.481875ms |             ::1 | POST     "/todos/save"
+[GIN] 2023/07/16 - 16:13:10 | 200 |    3.235708ms |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:11 | 301 |    1.465334ms |             ::1 | POST     "/todos/save"
+[GIN] 2023/07/16 - 16:13:11 | 200 |      862.25µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:12 | 200 |     992.958µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:16 | 301 |    1.659334ms |             ::1 | POST     "/todos/save"
+[GIN] 2023/07/16 - 16:13:16 | 200 |     936.084µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:18 | 200 |     933.958µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:20 | 301 |    1.361958ms |             ::1 | POST     "/todos/save"
+[GIN] 2023/07/16 - 16:13:20 | 200 |    1.070458ms |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:21 | 301 |    1.339625ms |             ::1 | POST     "/todos/save"
+[GIN] 2023/07/16 - 16:13:21 | 200 |     914.084µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:24 | 301 |    1.184833ms |             ::1 | POST     "/todos/save"
+[GIN] 2023/07/16 - 16:13:24 | 200 |    1.016625ms |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:28 | 301 |    1.372542ms |             ::1 | GET      "/todos/destroy?id=38"
+[GIN] 2023/07/16 - 16:13:28 | 200 |     905.667µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:28 | 301 |    1.675417ms |             ::1 | GET      "/todos/destroy?id=29"
+[GIN] 2023/07/16 - 16:13:28 | 200 |     945.917µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:30 | 301 |    1.365083ms |             ::1 | GET      "/todos/destroy?id=25"
+[GIN] 2023/07/16 - 16:13:30 | 200 |         933µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:30 | 301 |    1.140958ms |             ::1 | GET      "/todos/destroy?id=26"
+[GIN] 2023/07/16 - 16:13:30 | 200 |     863.125µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:30 | 301 |    1.368375ms |             ::1 | GET      "/todos/destroy?id=27"
+[GIN] 2023/07/16 - 16:13:30 | 200 |     865.583µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:30 | 301 |    1.404875ms |             ::1 | GET      "/todos/destroy?id=28"
+[GIN] 2023/07/16 - 16:13:30 | 200 |     754.416µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:30 | 301 |     991.917µs |             ::1 | GET      "/todos/destroy?id=30"
+[GIN] 2023/07/16 - 16:13:30 | 200 |      797.75µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:30 | 301 |   12.638375ms |             ::1 | GET      "/todos/destroy?id=31"
+[GIN] 2023/07/16 - 16:13:30 | 200 |     711.834µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:31 | 301 |    1.277084ms |             ::1 | GET      "/todos/destroy?id=32"
+[GIN] 2023/07/16 - 16:13:31 | 200 |     791.458µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:31 | 301 |       937.5µs |             ::1 | GET      "/todos/destroy?id=33"
+[GIN] 2023/07/16 - 16:13:31 | 200 |      813.25µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:31 | 301 |    1.039916ms |             ::1 | GET      "/todos/destroy?id=34"
+[GIN] 2023/07/16 - 16:13:31 | 200 |     675.125µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:31 | 301 |     943.542µs |             ::1 | GET      "/todos/destroy?id=35"
+[GIN] 2023/07/16 - 16:13:31 | 200 |     880.083µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:31 | 301 |      644.75µs |             ::1 | GET      "/todos/destroy?id=36"
+[GIN] 2023/07/16 - 16:13:31 | 200 |     359.875µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:13:32 | 301 |    1.368583ms |             ::1 | GET      "/todos/destroy?id=37"
+[GIN] 2023/07/16 - 16:13:32 | 200 |     608.458µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:14:00 | 301 |    2.501959ms |             ::1 | POST     "/todos/save"
+[GIN] 2023/07/16 - 16:14:00 | 200 |    2.301583ms |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:14:14 | 200 |    2.247834ms |             ::1 | GET      "/todos/edit?id=39"
+[GIN] 2023/07/16 - 16:14:19 | 301 |    2.587542ms |             ::1 | POST     "/todos/update"
+[GIN] 2023/07/16 - 16:14:19 | 200 |     835.709µs |             ::1 | GET      "/todos/list"
+[GIN] 2023/07/16 - 16:14:21 | 200 |     834.375µs |             ::1 | GET      "/todos/edit?id=39"
+[GIN] 2023/07/16 - 16:14:27 | 301 |     1.47325ms |             ::1 | POST     "/todos/update"
+[GIN] 2023/07/16 - 16:14:27 | 200 |     702.292µs |             ::1 | GET      "/todos/list"
